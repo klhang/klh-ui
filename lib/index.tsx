@@ -1,1 +1,3 @@
-console.log('hi-servered from webpack-dev-server');
+const div = document.createElement('div');
+div.innerText = 'hi';
+document.body.appendChild(div);
