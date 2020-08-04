@@ -1,1 +1,1 @@
-console.log('hi');
+console.log('hi-servered from webpack-dev-server');
