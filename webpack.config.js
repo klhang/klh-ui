@@ -6,6 +6,9 @@ module.exports = {
     entry: {
         index: './lib/index.tsx'
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),
         library: 'KUI',
@@ -24,6 +27,20 @@ module.exports = {
             title: 'KUI',
             templates: 'index.html'
         })
-    ]
+    ],
+    externals: {
+        'react': {
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            root: 'react'
+        },
+        'react-dom': {
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            root: 'react'
+        }
+    }
 
 };
